@@ -5,7 +5,7 @@ Quantum Simulation SDK
 # Bloch Sphere
 
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png width = 300)
 
 > In quantum mechanics, the **Bloch sphere** (also known as the Poincaré sphere in optics) is a geometrical representation of the pure state space of a 2-level quantum system
 
