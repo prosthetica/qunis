@@ -6,8 +6,7 @@ QUSIM is a simulation and 3D visualisation SDK to aid in the exploration of quan
 
 # Bloch Sphere
 
-Other useful way of interpreting the state of a qubit is by the angles of the vectors, in
-this case
+A useful way of interpreting the state of a qubit is by the angles of the vectors, 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png)
 
@@ -32,6 +31,19 @@ Qusim is an open source visualisation and simulation tool to empower creatives a
 - quantum visualisation (volumetric);
 - quantum computation education.
 - quantum circuitry data structure visualiser
+
+## Simulation 
+
+#### Toffoli 
+
+Toffoli simulator, which is a special-purpose simulator that can simulate quantum algorithms , for example this is exposed with the method `ToffoliSimulator`: 
+
+```c-sharp
+    var sim = new ToffoliSimulator();
+    var res = myOperation.Run(sim).Result;
+    var sim = new ToffoliSimulator(qubitCount: 1000000);
+    var res = myLargeOperation.Run(sim).Result;
+```    
 
 ## Sample
 
