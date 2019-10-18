@@ -1,9 +1,12 @@
 # QUSIM
 
 Quantum Simulation SDK
+QUSIM is a simulation and 3D visualisation SDK to aid in the exploration of quantum computation. 
 
 # Bloch Sphere
 
+One other useful way of interpreting the state of a qubit is by the angles of the vectors, in
+this case
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png){width=250px}
 
@@ -12,7 +15,8 @@ Quantum Simulation SDK
 
 # Visualisation of Quantum Mechanics
 
-
+Here we have a represantion of a wavefunction of a free particle, below is a sample presentation of such modelling:
+ 
 [![](http://img.youtube.com/vi/p7bzE1E5PMY/0.jpg)](http://www.youtube.com/watch?v=p7bzE1E5PMY "")
 
 
@@ -21,17 +25,13 @@ Quantum Simulation SDK
 
 ## Introduction
 
-Yao is an open source framework that aims to empower quantum information research with software tools. It is designed with following in mind:
+Qusim is an open source visualisation and simulation tool to empower creatives and researchers to develop artistic interpretations of quantum computing. It is designed with following in mind:
 
-- quantum algorithm design;
-- quantum [software 2.0](https://medium.com/@karpathy/software-2-0-a64152b37c35);
+- quantum mechanics and simulation;
+- quantum visualisation (volumetric);
 - quantum computation education.
 
-**We are in an early-release beta. Expect some adventures and rough edges.**
-
-## Try your first Yao program
-
-A 3 line [Quantum Fourier Transformation](https://quantumbfs.github.io/Yao.jl/latest/examples/QFT/) with [Quantum Blocks](https://quantumbfs.github.io/Yao.jl/latest/man/blocks/):
+## Sample
 
 ```c-sharp
 Driver.cs:
@@ -53,24 +53,6 @@ namespace Quantum.DemoRotations2
  }
  }
 }
-Operation.qs:
-namespace Quantum.DemoRotations2
-{
- open Microsoft.Quantum.Primitive;
- open Microsoft.Quantum.Canon;
- open Microsoft.Quantum.Extensions.Diagnostics;
- open Microsoft.Quantum.Extensions.Math;
- operation DemoRotations () : ()
- {
- body
- {
- using(qubits = Qubit[1])
- {
-DumpMachine("");
- }
- }
- }
-}
 ```
 
 ## Installation
@@ -79,48 +61,16 @@ Yao is a [julia](https://julialang.org/) language package. To install Yao, pleas
 
 For stable release
 
-```julia
+```javascript
 pkg> add Yao
 ```
 
 For current master
 
-```julia
+```javascript
 pkg> add Yao#master YaoBlocks#master YaoArrayRegister#master
 ```
 
-If you have problem to install the package, please [file us an issue](https://github.com/QuantumBFS/Yao.jl/issues/new).
-
-For CUDA support, see [CuYao.jl](https://github.com/QuantumBFS/CuYao.jl).
-
-## Documentation
-
-### Getting Started
-
-[Examples: understand Yao's code for quantum algorithms](https://quantumbfs.github.io/Yao.jl/stable/#Getting-Started-1)
-
-### Algoritm Zoo
-
-Some quantum algorithms are implemented with Yao in [QuAlgorithmZoo](https://github.com/QuantumBFS/QuAlgorithmZoo.jl).
-
-### Online Documentation
-
-- [**STABLE**](https://quantumbfs.github.io/Yao.jl/stable) — most recently tagged version of the documentation.
-- [**LATEST**](https://quantumbfs.github.io/Yao.jl/latest) — in-development version of the documentation.
-
-## Communication
-
-- Github issues: Please feel free to ask questions and report bugs, feature request in issues
-- slack: you can [join julia's slack channel](https://slackinvite.julialang.org/) and ask Yao related questions in `#yao-dev` channel.
-- Julia discourse: You can also ask questions on [julia discourse](https://discourse.julialang.org/) or the [Chinese discourse](https://discourse.juliacn.com/)
-
-## Contribution
-
-Please read our [contribution guide](https://github.com/QuantumBFS/Yao.jl/blob/master/CONTRIBUTING.md).
-
-## The Team
-
-This project is an effort of QuantumBFS, an open source organization for quantum science. Yao is currently maintained by [Xiuzhe (Roger) luo](https://github.com/Roger-luo) and [Jin-guo Liu](https://github.com/GiggleLiu) with contributions from open source community. All the contributors are listed in the [contributors](https://github.com/QuantumBFS/Yao.jl/graphs/contributors).
 
 ## Papers Referenced
 
