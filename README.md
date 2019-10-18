@@ -33,10 +33,44 @@ Yao is an open source framework that aims to empower quantum information researc
 
 A 3 line [Quantum Fourier Transformation](https://quantumbfs.github.io/Yao.jl/latest/examples/QFT/) with [Quantum Blocks](https://quantumbfs.github.io/Yao.jl/latest/man/blocks/):
 
-```julia
-A(i, j) = control(i, j=>shift(2π/(1<<(i-j+1))))
-B(n, k) = chain(n, j==k ? put(k=>H) : A(j, k) for j in k:n)
-qft(n) = chain(B(n, k) for k in 1:n)
+```c-sharp
+Driver.cs:
+using Microsoft.Quantum.Simulation.Core;
+using Microsoft.Quantum.Simulation.Simulators;
+using System;
+namespace Quantum.DemoRotations2
+{
+ class Driver
+ {
+ static void Main(string[] args)
+ {
+ using (var quantumSimulator = new QuantumSimulator())
+ {
+ var result = DemoRotations.Run(quantumSimulator).Result;
+ }
+ Console.WriteLine("Done");
+ Console.ReadLine();
+ }
+ }
+}
+Operation.qs:
+namespace Quantum.DemoRotations2
+{
+ open Microsoft.Quantum.Primitive;
+ open Microsoft.Quantum.Canon;
+ open Microsoft.Quantum.Extensions.Diagnostics;
+ open Microsoft.Quantum.Extensions.Math;
+ operation DemoRotations () : ()
+ {
+ body
+ {
+ using(qubits = Qubit[1])
+ {
+DumpMachine("");
+ }
+ }
+ }
+}
 ```
 
 ## Installation
@@ -88,11 +122,11 @@ Please read our [contribution guide](https://github.com/QuantumBFS/Yao.jl/blob/m
 
 This project is an effort of QuantumBFS, an open source organization for quantum science. Yao is currently maintained by [Xiuzhe (Roger) luo](https://github.com/Roger-luo) and [Jin-guo Liu](https://github.com/GiggleLiu) with contributions from open source community. All the contributors are listed in the [contributors](https://github.com/QuantumBFS/Yao.jl/graphs/contributors).
 
-## Papers Citing Yao
+## Papers Referenced
 
-> Variational Quantum Eigensolver with Fewer Qubits,
-> Jin-Guo Liu, Yi-Hong Zhang, Yuan Wan, Lei Wang,
-> https://arxiv.org/abs/1902.02663
+> Quantum spacetime on a quantum simulator
+> Keren Li, Youning Li, Muxin Han, Sirui Lu, Jie Zhou, Dong Ruan, Guilu Long, Yidun Wan, Dawei Lu, Bei Zeng & Raymond Laflamme 
+> https://www.nature.com/articles/s42005-019-0218-5
 
 > Learning and inference on generative adversarial quantum circuits,
 > Jinfeng Zeng, Yufeng Wu, Jin-Guo Liu, Lei Wang, and Jiangping Hu,
