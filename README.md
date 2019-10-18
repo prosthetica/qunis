@@ -1,6 +1,7 @@
 # QUSIM
 
 Quantum Simulation SDK
+
 QUSIM is a simulation and 3D visualisation SDK to aid in the exploration of quantum computation. 
 
 # Bloch Sphere
@@ -8,7 +9,7 @@ QUSIM is a simulation and 3D visualisation SDK to aid in the exploration of quan
 One other useful way of interpreting the state of a qubit is by the angles of the vectors, in
 this case
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png){width=250px}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png width=250px )
 
 > In quantum mechanics, the **Bloch sphere** (also known as the Poincaré sphere in optics) is a geometrical representation of the pure state space of a 2-level quantum system
 
@@ -30,6 +31,7 @@ Qusim is an open source visualisation and simulation tool to empower creatives a
 - quantum mechanics and simulation;
 - quantum visualisation (volumetric);
 - quantum computation education.
+- quantum circuitry data structure visualiser
 
 ## Sample
 
@@ -62,13 +64,13 @@ Yao is a [julia](https://julialang.org/) language package. To install Yao, pleas
 For stable release
 
 ```javascript
-pkg> add Yao
+npm install qusim
 ```
 
 For current master
 
 ```javascript
-pkg> add Yao#master YaoBlocks#master YaoArrayRegister#master
+npm install qusim
 ```
 
 
