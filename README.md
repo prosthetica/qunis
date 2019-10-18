@@ -1,16 +1,15 @@
 # QUSIM
 
-Quantum Simulation SDK
+> Quantum Simulation SDK
 
 QUSIM is a simulation and 3D visualisation SDK to aid in the exploration of quantum computation. 
 
 # Bloch Sphere
 
-A useful way of interpreting the state of a qubit is by the angles of the vectors, 
+> In quantum mechanics, the **Bloch sphere** (also known as the Poincaré sphere in optics) is a geometrical representation of the pure state space of a 2-level quantum system. A useful way of interpreting the state of a qubit is by the angles of the vectors, 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png)
 
-> In quantum mechanics, the **Bloch sphere** (also known as the Poincaré sphere in optics) is a geometrical representation of the pure state space of a 2-level quantum system
 
 
 # Visualisation of Quantum Mechanics
