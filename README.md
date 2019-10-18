@@ -6,7 +6,7 @@ QUSIM is a simulation and 3D visualisation SDK to aid in the exploration of quan
 
 # Bloch Sphere
 
-One other useful way of interpreting the state of a qubit is by the angles of the vectors, in
+Other useful way of interpreting the state of a qubit is by the angles of the vectors, in
 this case
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/384px-Bloch_sphere.svg.png)
@@ -57,22 +57,6 @@ namespace Quantum.DemoRotations2
 }
 ```
 
-## Installation
-
-Yao is a [julia](https://julialang.org/) language package. To install Yao, please [open Julia's interactive session (known as REPL)](https://docs.julialang.org/en/v1/manual/getting-started/) and type `]` in the REPL to use the package mode, then type this command:
-
-For stable release
-
-```javascript
-npm install qusim
-```
-
-For current master
-
-```javascript
-npm install qusim
-```
-
 
 ## Papers Referenced
 
@@ -80,14 +64,14 @@ npm install qusim
 > Keren Li, Youning Li, Muxin Han, Sirui Lu, Jie Zhou, Dong Ruan, Guilu Long, Yidun Wan, Dawei Lu, Bei Zeng & Raymond Laflamme 
 > https://www.nature.com/articles/s42005-019-0218-5
 
-> Learning and inference on generative adversarial quantum circuits,
-> Jinfeng Zeng, Yufeng Wu, Jin-Guo Liu, Lei Wang, and Jiangping Hu,
-> Phys. Rev. A 99, 052306 – Published 6 May 2019
+> Visualizing a silicon quantum computer
+> Barry C Sanders, Lloyd C L Hollenberg, Darran Edmundson, and Andrew Edmundson
+> https://iopscience.iop.org/article/10.1088/1367-2630/10/12/125005
 
-> Parameterized quantum circuits as machine learning models,
-> Marcello Benedetti, Erika Lloyd, and Stefan Sack
-> https://arxiv.org/pdf/1906.07682.pdf
+> Architectural design for a topological cluster state quantum computer,
+> Simon J. Devitt, Austin G. Fowler, Ashley M. Stephens, Andrew D. Greentree, Lloyd C.L. Hollenberg, William J. Munro, Kae Nemoto
+> https://arxiv.org/abs/0808.1782
 
 ## License
 
-**Yao** is released under the Apache 2 license.
+**Qusim** is released under the Apache 2 license.
